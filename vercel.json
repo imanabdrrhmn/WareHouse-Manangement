@@ -9,31 +9,31 @@
   "routes": [
     {
       "src": "/auth/(.*)",
-      "destination": "/routes/Auth.js"
+      "dest": "/routes/Auth.js"
     },
     {
       "src": "/users/(.*)",
-      "destination": "/routes/users.js"
+      "dest": "/routes/users.js"
     },
     {
       "src": "/products/(.*)",
-      "destination": "/routes/products.js"
+      "dest": "/routes/products.js"
     },
     {
       "src": "/orders/(.*)",
-      "destination": "/routes/orders.js"
+      "dest": "/routes/orders.js"
     },
     {
       "src": "/inventory/(.*)",
-      "destination": "/routes/inventory.js"
+      "dest": "/routes/inventory.js"
     },
     {
       "src": "/files/(.*)",
-      "destinaiton": "/routes/files.js"
+      "dest": "/routes/files.js"
     },
     {
       "src": "/(.*)",
-      "destination": "/app.js"
+      "dest": "/app.js"
     }
   ]
 }
