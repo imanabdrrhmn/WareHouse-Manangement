@@ -4,23 +4,27 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const sequelize = require('./config/database');
 const path = require('path');
+
 const authRoutes = require('./routes/Auth');
 const userRoutes = require('./routes/users');
 const productRoutes = require('./routes/products');
+const fileRoutes = require('./routes/files');
 const orderRoutes = require('./routes/orders');
 const inventoryRoutes = require('./routes/inventory');
-const fileRoutes = require('./routes/files');
-
-const app = express();
 
 app.use(bodyParser.json());
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+// Use routes
 app.use('/auth', authRoutes);
 app.use('/users', userRoutes);
 app.use('/products', productRoutes);
+app.use('/files', fileRoutes);
 app.use('/orders', orderRoutes);
 app.use('/inventory', inventoryRoutes);
-app.use('/files', fileRoutes);
+
+app.get('/', (req, res) => {
+    res.send('API is working');
+});
 
 sequelize.sync({ force: false }).then(() => {
   console.log('Database & tables created!');
