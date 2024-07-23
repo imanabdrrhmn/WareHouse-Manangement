@@ -2,38 +2,38 @@
   "version": 2,
   "builds": [
     {
-      "src": "app.js",
+      "source": "app.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/auth/(.*)",
-      "dest": "/routes/Auth.js"
+      "source": "/auth/(.*)",
+      "destination": "/routes/Auth.js"
     },
     {
-      "src": "/users/(.*)",
-      "dest": "/routes/users.js"
+      "source": "/users/(.*)",
+      "destination": "/routes/users.js"
     },
     {
-      "src": "/products/(.*)",
-      "dest": "/routes/products.js"
+      "source": "/products/(.*)",
+      "destination": "/routes/products.js"
     },
     {
-      "src": "/files/(.*)",
-      "dest": "/routes/files.js"
+      "source": "/files/(.*)",
+      "destinaiton": "/routes/files.js"
     },
     {
-      "src": "/orders/(.*)",
-      "dest": "/routes/orders.js"
+      "source": "/orders/(.*)",
+      "destination": "/routes/orders.js"
     },
     {
-      "src": "/inventory/(.*)",
-      "dest": "/routes/inventory.js"
+      "source": "/inventory/(.*)",
+      "destination": "/routes/inventory.js"
     },
     {
-      "src": "/(.*)",
-      "dest": "/app.js"
+      "source": "/(.*)",
+      "destination": "/app.js"
     }
   ]
 }
