@@ -36,30 +36,4 @@
       "dest": "/app.js"
     }
   ],
-  "functions": {
-    "routes/Auth.js": {
-      "memory": 256,
-      "maxDuration": 10
-    },
-    "routes/users.js": {
-      "memory": 256,
-      "maxDuration": 10
-    },
-    "routes/products.js": {
-      "memory": 256,
-      "maxDuration": 10
-    },
-    "routes/files.js": {
-      "memory": 256,
-      "maxDuration": 10
-    },
-    "routes/orders.js": {
-      "memory": 256,
-      "maxDuration": 10
-    },
-    "routes/inventory.js": {
-      "memory": 256,
-      "maxDuration": 10
-    }
-  }
 }
