@@ -12,6 +12,7 @@ const fileRoutes = require('./routes/files');
 const orderRoutes = require('./routes/orders');
 const inventoryRoutes = require('./routes/inventory');
 
+const app = express();
 app.use(bodyParser.json());
 
 // Use routes
