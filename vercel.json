@@ -8,31 +8,31 @@
   ],
   "routes": [
     {
-      "source": "/auth/(.*)",
+      "src": "/auth/(.*)",
       "destination": "/routes/Auth.js"
     },
     {
-      "source": "/users/(.*)",
+      "src": "/users/(.*)",
       "destination": "/routes/users.js"
     },
     {
-      "source": "/products/(.*)",
+      "src": "/products/(.*)",
       "destination": "/routes/products.js"
     },
     {
-      "source": "/files/(.*)",
-      "destinaiton": "/routes/files.js"
-    },
-    {
-      "source": "/orders/(.*)",
+      "src": "/orders/(.*)",
       "destination": "/routes/orders.js"
     },
     {
-      "source": "/inventory/(.*)",
+      "src": "/inventory/(.*)",
       "destination": "/routes/inventory.js"
     },
     {
-      "source": "/(.*)",
+      "src": "/files/(.*)",
+      "destinaiton": "/routes/files.js"
+    },
+    {
+      "src": "/(.*)",
       "destination": "/app.js"
     }
   ]
