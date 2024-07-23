@@ -32,12 +32,8 @@
       "dest": "/routes/inventory.js"
     },
     {
-"rewrites": [
-        {
       "src": "/(.*)",
       "dest": "/app.js"
-        }
-    ]
     }
   ]
 }
